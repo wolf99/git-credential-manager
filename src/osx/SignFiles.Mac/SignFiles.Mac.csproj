@@ -36,10 +36,25 @@
       <InProject>false</InProject>
     </FilesToSign>
     <MacFilesToSign Include="
+      $(OutDir)\Atlassian.Bitbucket.UI;
       $(OutDir)\git-credential-manager-core;
       $(OutDir)\GitHub.UI;
       $(OutDir)\GitLab.UI;
-      $(OutDir)\Atlassian.Bitbucket.UI;">
+      $(OutDir)\libAvaloniaNative.dylib;
+      $(OutDir)\libHarfBuzzSharp.dylib;
+      $(OutDir)\libSkiaSharp.dylib;
+      $(OutDir)\libSystem.IO.Compression.Native.dylib;
+      $(OutDir)\libSystem.Native.dylib;
+      $(OutDir)\libSystem.Net.Security.Native.dylib;
+      $(OutDir)\libSystem.Security.Cryptography.Native.Apple.dylib;
+      $(OutDir)\libSystem.Security.Cryptography.Native.OpenSsl.dylib;
+      $(OutDir)\libclrjit.dylib;
+      $(OutDir)\libcoreclr.dylib;
+      $(OutDir)\libdbgshim.dylib;
+      $(OutDir)\libhostfxr.dylib;
+      $(OutDir)\libhostpolicy.dylib;
+      $(OutDir)\libmscordaccore.dylib;
+      $(OutDir)\libmscordbi.dylib;">
       <InProject>false</InProject>
     </MacFilesToSign>
   </ItemGroup>
