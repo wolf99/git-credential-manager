@@ -52,15 +52,10 @@ function parseArgs() {
 }
 
 function getPackageId {
-  local PKG=$(cd "$(dirname "$1")"; pwd)/$(basename "$1")
-  local PKGDEST=$(mktemp -d | tr -d '\r')
-  xar -x -f "${PKG}" --exclude '^(?:(?!PackageInfo).)*$' -C "${PKGDEST}"
-  if [ ! -e "${PKGDEST}/PackageInfo" ]; then
-      echo "error: can't find 'PackageInfo'; maybe meta-package"
-      return 1
+  local regex='gcmcore-osx-[0-9.]*[^.pkg]'
+  if [[ $1 =~ $regex ]]; then
+        echo "${BASH_REMATCH[0]}"
   fi
-  cat "${PKGDEST}/PackageInfo" | tr -d '\r' | tr -d '\n' | sed 's:^.*identifier="\([^"]*\)".*$:\1:g'
-  rm -rf "${PKGDEST}"
 }
 
 parseArgs "$@"
@@ -83,7 +78,7 @@ fi
 declare bundle_id=$(getPackageId ${arg_PackagePath})
 
 if [[ -z $bundle_id ]]; then
-    echo "[ERROR] No identifier found in package info!"
+    echo "[ERROR] package identifier not found!"
     exit 1
 fi
 
