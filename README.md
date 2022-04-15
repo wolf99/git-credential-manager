@@ -21,7 +21,7 @@ Git Credential Manager is currently available for Windows, macOS, and Linux. GCM
 Feature|Windows|macOS|Linux
 -|:-:|:-:|:-:
 Installer/uninstaller|&#10003;|&#10003;|&#10003;\*
-Secure platform credential storage|&#10003;<br/>[(see more)](docs/credstores.md)|&#10003;<br/>[(see more)](docs/credstores.md)|&#10003;<br/>[(see more)](docs/credstores.md)
+Secure platform credential storage|&#10003; [(see more)](docs/credstores.md)|&#10003; [(see more)](docs/credstores.md)|&#10003; [(see more)](docs/credstores.md)
 Multi-factor authentication support for Azure DevOps|&#10003;|&#10003;|&#10003;
 Two-factor authentication support for GitHub|&#10003;|&#10003;|&#10003;
 Two-factor authentication support for Bitbucket|&#10003;|&#10003;|&#10003;
@@ -85,8 +85,6 @@ sudo /usr/local/share/gcm-core/uninstall.sh
 
 ---
 
-<!-- this explicit anchor should stay stable so that external docs can link here -->
-<a name="linux-install-instructions"></a>
 ### Linux
 
 #### Experimental: install from source helper script
