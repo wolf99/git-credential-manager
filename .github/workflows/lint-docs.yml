@@ -16,4 +16,5 @@ jobs:
       - uses: DavidAnson/markdownlint-cli2-action@744f913a124058ee903768d3adb92a4847e5d132
         with:
           globs: |
+            *.md
             **/*.md
