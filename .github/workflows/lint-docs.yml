@@ -5,7 +5,6 @@ on:
   push:
     branches: [ main, linux ]
   pull_request:
-    branches: [ main, linux ]
 
 jobs:
   lint-markdown:
