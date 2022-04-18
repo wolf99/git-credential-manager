@@ -85,7 +85,7 @@ sudo /usr/local/share/gcm-core/uninstall.sh
 
 ---
 
-### Linux
+### Linux {#linux-install-instructions}
 
 #### Experimental: install from source helper script
 
