@@ -86,6 +86,7 @@ sudo /usr/local/share/gcm-core/uninstall.sh
 ---
 
 <!-- this explicit anchor should stay stable so that external docs can link here -->
+<!-- markdownlint-disable-next-line no-inline-html -->
 <a name="linux-install-instructions"></a>
 
 ### Linux
